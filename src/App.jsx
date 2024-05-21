@@ -1,16 +1,17 @@
 import ButtonGradient from "./assets/svg/ButtonGradient";
 import Header from "./components/header";
 import Hero from "./components/Hero";
+import ProfileCard from "./components/ProfileCard";
+import TestMenu from "./components/TestMenu.jsx";
 
 const App = () => {
   return (
     <>
-      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden"> 
-        {/* configure lg:pt-[0.1rem] to your needs, original was 5.25rem */}
-       <Header />
-       <Hero /> 
+      <Header />
+      <div>
+        <ProfileCard/>
+        <TestMenu />
       </div>
-      <ButtonGradient />
     </>
   );
 }
